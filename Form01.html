@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Prog209HW3</title>
+      <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+
+<form name = "mainFrom" onsubmit="return false">
+
+	<fieldset id="custInfo">
+    <legend class="legend" >Customer Information</legend>
+   <label for="custname"> Name:</label> 
+    <input name="custname" id="custname" class="inputClass"/>
+      <br><br>
+  <label for="city">City:</label>
+    <input name="city" id="city" class="inputClass"/>
+      <br><br>
+  <label for="payment">Payment Prefference: </label>
+    <select name="payment" id="payment" class="inputClass">
+        <option value="Cash">cash</option>
+        <option value="Debit">Debit</option>
+        <option value="Visa or MC">Visa or MC</option>
+    </select>  
+  <br><br>
+    <input type="submit" value="Submit" onclick="collectForm()">
+  </fieldset>
+</form>
+
+<br><br>
+
+<div id="myCustomers">
+  <h2>My Customers</h2>
+</div>
+
+
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
